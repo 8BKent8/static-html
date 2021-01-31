@@ -1,3 +1,254 @@
+/*html tag attributes*/
+html {
+  font-family: sans-serif;
+}
+
 body {
-    background-color: lightblue;
+  margin: 0;
+  background-color: #e6eef7;
+}
+
+nav {
+  margin: 0;
+  background-color: black;
+  color: #aaa;
+}
+
+nav, ul, li, div, button, i {
+  color: inherit;
+  font-size: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/************************************************/
+/* week-3 pseudo-class elements styled here */
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:link {
+  animation: shade 4s infinite;
+}
+
+a:visited {
+  color: #aaa;
+}
+
+a:hover {
+  color: #ff3300;
+}
+
+a:active {
+  background-color: #555;
+}
+/*************************************************/
+
+
+b {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 5px 5px;
+}
+
+h6 {
+  margin: 0;
+  letter-spacing: 5px
+}
+
+p {
+  text-size: 16px;
+  text-align: left;
+  padding: 10px;
+}
+
+footer {
+  margin: 0;
+}
+
+/* css for banner and navigation area*/
+
+/*bk container for all elements in banner*/
+.bk-banner-container{
+  display: table;
+  /* background image sits behind all
+  other visible elements in banner*/
+  background-image: url("../images/heroimg.png");
+  background-position: center;
+  color: #aaa;
+  font-size: 22px;
+  width: 100%;
+}
+
+/* banner top container */
+.bk-banner-top {
+  background-color: black;
+  opacity: 85%;
+  padding: 30px;
+  text-align: center;
+}
+
+/* text shadow animation for "shady" id */
+#shady {
+  animation: shade 5s infinite;
+}
+/* shorthand = horiz, vert, blur, color */
+@keyframes shade {
+  50% {text-shadow: 5px 10px 15px #ff3300;}
+}
+
+/* bk vertical nav menu container */
+.bk-menu {
+  float: left;
+  padding: 30px;
+  text-align: left;
+  background: black;
+  opacity: 85%;
+  margin: auto;
+}
+
+/* space out the menu items */
+.bk-list {
+  padding: 40px 100px;
+  margin: 10px;
+}
+
+/* Add a gray background
+and orange text color to project>
+submenu links on hover */
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  box-sizing: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.dropbtn:hover {
+  color: #111;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  font-size: 16px;
+  position: absolute;
+  background-color: #111;
+  min-width: 140px;
+  text-decoration: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+/* css for main area */
+.bk-main {
+  clear: both;
+  margin: 0;
+  padding: 100px 40px;
+}
+
+.bk-headline {
+  text-align: left;
+  margin: 0 20%;
+  padding; 20px;
+}
+
+.table1 {
+  border: none;
+  position: auto;
+}
+
+.table-spacing1 {
+  margin: auto;
+  width: 50%;
+  padding: 30px 30px;
+}
+
+.img-spacing1 td {
+  margin: auto;
+  width: 50%;
+  padding: 20px 10px;
+}
+
+.preview-img {
+  height: 250px;
+  width: auto;
+  box-shadow: 2px 2px 5px grey;
+  border: 2px solid #333;
+}
+
+.table2 {
+  border: 2px solid #333;
+  width: 60%;
+  align: center;
+  vertical-align: middle;
+}
+
+.table2-spacing {
+  margin: auto;
+  height: 20%;
+  padding: 30px 30px;
+}
+
+
+/* css for footer area */
+.bk-foot {
+  background-color: black;
+  min-height: 250px;
+}
+
+.btn {
+  border: 2px solid #ff3300;
+  padding: 20px 30px;
+  background-color: black;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 80px;
+}
+
+.btn a h2 {
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #ff0000
+}
+
+.btn-spacing {
+  margin: auto;
+  width: 50%;
+  padding: 50px;
 }
