@@ -1,82 +1,160 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Added preconnect per fonts.google.com instructions -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- loads Open Sans font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap">
+    <!-- Loads my css file -->
     <link rel="stylesheet" type="text/css" href="../css/bk_style.css">
-    <title>BK Homepage</title>
+    <title> BK Homepage </title>
   </head>
+
   <body>
+
+    <!-- Navigation Banner -->
+
     <div class="bk-banner-container">
       <div class="bk-banner-top">
         <h6>Hire the<span id="shady"> worlds shadiest </span>project developer</h6>
       </div>
-      <nav>
-        <ul class="bk-menu">
-          <li class="bk-list">
-            <a href="./index.html"><b> Home </b></a>
-          </li>
-          <div class="bk-list dropdown">
-            <button class="dropbtn"><b> Projects > </b></button>
-            <li class="dropdown-content">
-              <a href="./solder.html"> Soldering </a>
-              <a href="./python.html"> Pythons </a>
-              <a href="./woodworking.html"> Woodworking </a>
-            </li>
-          </div>
-          <li class="bk-list">
-            <a href="./contact.html"><b> Contact </b></a>
-          </li>
-        </ul>
-      </nav>
     </div>
 
+    <!-- Verticle nav menu on left side -->
+
+    <nav class="sticky-nav">
+      <ul class="bk-menu">
+        <li class="bk-list">
+          <a href="./index.html"><b> Home </b></a>
+        </li>
+        <div class="bk-list dropdown">
+          <button class="dropbtn"><b> Projects > </b></button>
+          <li class="dropdown-content">
+            <a href="./solder.html"> Soldering </a>
+            <a href="./python.html"> Python </a>
+            <a href="./woodworking.html"> Woodworking </a>
+          </li>
+        </div>
+        <li class="bk-list">
+          <a href="./contact.html"><b> Contact </b></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main area headlines -->
+
     <main class="bk-main">
-      <div class="">
-        <h1 style="border:2px solid #ff3300; border-radius:50px;" class="bk-headline">Completed Projects</h1>
-        <p style="text-shadow: 2px 2px 5px #ff3300; text-align: center;" >We're all up to something. . . Now more than ever.</p>
-        <table class="table1 table-spacing1">
-          <tr class="img-spacing1">
-            <td>
-              <img class="preview-img" src="../images/solder900.png"></img>
-            </td>
-            <td>
-              <img class="preview-img" src="../images/python900.png"></img>
-            </td>
-            <td>
-              <img class="preview-img" src="../images/woodworking900.png"></img>
-            </td>
-          </tr>
-        </table>
-        <table class="table2 table2-spacing">
-          <tr>
-            <th>Catagory</th>
-            <th>Name</th>
-            <th>Completed Date</th>
-          <tr>
-            <td>Soldering</td>
-            <td>Bluesbreaker v.4</td>
-            <td>2016 December 30</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>Alien Invasion Game</td>
-            <td>2020 April 27</td>
-          </tr>
-          <tr>
-            <td>Woodworking</td>
-            <td>Effects Pedal Board</td>
-            <td>2016 May 1</td>
-          </tr>
-        </table>
+      <div class="bk-headline">
+        <h1> Completed Projects </h1>
+        <div>
+          <p class="bk-subtitle">
+            <b> We're all up to something
+              <u> relative </u>
+            . . . Now more than ever.
+            </b>
+          </p>
+        </div>
       </div>
+
+      <!-- Column 1 -->
+
+      <div class="bk-row">
+        <div class="bk-column">
+          <div class="preview">
+            <a href="./solder.html">
+              <img class="preview-img" src="../images/solder900.png"></img>
+            </a>
+            <p><b> Soldering Projects - </b>
+                  Preparing circuit boards, wiring and assembly.
+                  Including enclosure prep and finishing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+
+        <div class="bk-column">
+          <div class="preview">
+            <a href="./python.html">
+              <img class="preview-img" src="../images/python900.png"></img>
+            </a>
+            <p><b> Python Projects - </b>
+                  Coding tools, Raspberry Pi, django, and simple games with pygame.
+                  Begining to incorporate git for version control.
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+
+        <div class="bk-column">
+          <div class="preview">
+            <a href="./woodworking.html">
+              <img class="preview-img" src="../images/woodworking900.png"></img>
+            </a>
+            <p><b> Woodworking Projects - </b>
+                  Custom pedal boards with input, output
+                  and power converter with iec connection
+                  and master switch on top.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Week 6 table updates -->
+      <!-- table of projects -->
+
+      <table class="homepage-table">
+        <tr>
+          <th  colspan="3" class="table-top">Week 6 Updated Projects Table</th>
+        </tr>
+        <tr id="top-row">
+          <th> Catagory </th>
+          <th> Name </th>
+          <th> Completed Date </th>
+        <tr>
+          <!-- adjust rowspans as group items are added -->
+          <td rowspan="3" id="table-grp-soldering"> Soldering </td>
+          <td> Bluesbreaker v.4 </td>
+          <td> 2016 December 30 </td>
+        </tr>
+        <tr>
+          <td> Refractor </td>
+          <td> 2017 January 15 </td>
+        </tr>
+        <tr>
+          <td> SHO </td>
+          <td> 2016 January 27 </td>
+        </tr>
+        <tr>
+          <!-- adjust rowspans as group items are added -->
+          <td rowspan="1" id="table-grp-python"> Python </td>
+          <td> Alien Invasion Game </td>
+          <td> 2020 April 27 </td>
+        </tr>
+        <tr>
+          <!-- adjust rowspans as group items are added -->
+          <td rowspan="2" id="table-grp-woodworking"> Woodworking </td>
+          <td> Acoustic Pedal Board </td>
+          <td> 2017 June 1 </td>
+        <tr>
+          <td> Electric Pedal Board </td>
+          <td> 2017 May 1 </td>
+        </tr>
+      </table>
     </main>
+
+<!-- Footer area  -->
 
     <footer class="bk-foot">
       <div class="btn-spacing">
         <button class="btn dropbtn">
-          <a href="#"><h2>Suggest a Project</h2></a>
+          <a href="#"><h2> Suggest a Project </h2></a>
 
         </button>
       </div>
     </footer>
+
   </body>
 </html>

@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Added preconnect per fonts.google.com instructions -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- loads Open Sans font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap">
+    <!-- Loads my css file -->
     <link rel="stylesheet" type="text/css" href="../css/bk_style.css">
-    <title> BK Week-3 Contact </title>
+    <title> BK - Contact </title>
   </head>
+
   <body>
+
+
+    <!-- Navigation Banner -->
+
     <div class="bk-banner-container">
       <div class="bk-banner-top">
         <h6>Hire the<span id="shady"> worlds shadiest </span>project developer</h6>
       </div>
+    </div>
+
+    <!-- Verticle nav menu on left side -->
+
+    <nav class="sticky-nav">
       <ul class="bk-menu">
         <li class="bk-list">
           <a href="./index.html"><b> Home </b></a>
@@ -17,7 +32,7 @@
           <button class="dropbtn"><b> Projects > </b></button>
           <li class="dropdown-content">
             <a href="./solder.html"> Soldering </a>
-            <a href="./python.html"> Pythons </a>
+            <a href="./python.html"> Python </a>
             <a href="./woodworking.html"> Woodworking </a>
           </li>
         </div>
@@ -25,9 +40,24 @@
           <a href="./contact.html"><b> Contact </b></a>
         </li>
       </ul>
-    </div>
-    <main>
-      <p> Contact Page </p>
+    </nav>
+
+    <!-- Main area headlines -->
+
+    <main class="bk-main">
+      <div class="bk-headline">
+        <h1>Contact</h1>
+        <div>
+          <p class="bk-subtitle">
+            <b>We're all up to something
+              <u> relative </u>
+            . . . Now more than ever.
+            </b>
+          </p>
+        </div>
+      </div>
+
     </main>
+
   </body>
 </html>

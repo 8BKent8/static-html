@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Added preconnect per fonts.google.com instructions -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- loads Open Sans font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap">
+    <!-- Loads my css file -->
     <link rel="stylesheet" type="text/css" href="../css/bk_style.css">
-    <title> BK Week-3 Woodworking</title>
+    <title> BK - Woodworking</title>
   </head>
-  <body>
+
+<body>
+
+
+    <!-- Navigation Banner -->
+
     <div class="bk-banner-container">
       <div class="bk-banner-top">
         <h6>Hire the<span id="shady"> worlds shadiest </span>project developer</h6>
       </div>
+    </div>
+
+    <!-- Verticle nav menu on left side -->
+
+    <nav class="sticky-nav">
       <ul class="bk-menu">
         <li class="bk-list">
           <a href="./index.html"><b> Home </b></a>
@@ -17,7 +32,7 @@
           <button class="dropbtn"><b> Projects > </b></button>
           <li class="dropdown-content">
             <a href="./solder.html"> Soldering </a>
-            <a href="./python.html"> Pythons </a>
+            <a href="./python.html"> Python </a>
             <a href="./woodworking.html"> Woodworking </a>
           </li>
         </div>
@@ -25,9 +40,141 @@
           <a href="./contact.html"><b> Contact </b></a>
         </li>
       </ul>
-    </div>
-    <main>
-      <p> Woodworking Projects Page </p>
+    </nav>
+
+    <!-- Main area headlines -->
+
+    <main class="bk-main bk-main-woodworking">
+
+       <!-- Row 1 -->
+
+      <div class="bk-wide-row clearfix">
+        <div class="bk-wide-column">
+
+          <!--  Row 1 - Column 1 -->
+
+          <div class="text-outer">
+            <div class="text-inner">
+              <div class="text-center">
+                <h4 class="description">Small Pedal Board</h4>
+                <i>for acoustic guitar</i>
+              </div>
+              <p>The inspiration for this board stems from it's ability to
+                function without external power.
+              </p>
+              <figure class="right">
+                <img alt="assembling a pedalboard" class="small-img" src="../images/ap1.png">
+                <figcaption>fig.1 Assembly</figcaption>
+              </figure>
+              <p>Nine volt batteries furnish the voltage for the tuner and
+                looping pedal, while phantom power fuels the acoustic preamp.
+                The preamp is the workhorse for a passive accoustic pickup
+                system which allows for playing into a variety of sound
+                systems. If needed two none volt batteies can be used for the
+                preamp, although this scenario is rare. During construction,
+                the oak boards were clamped, glued and brad nailed together.
+                The gaps were incorporated to allow flexible cable routing.
+                The second image shows how easily the 90 degree
+                jacks route underneath the surface.
+              </p>
+              <figure class="right">
+                <img alt="pedalboard cable routing" class="small-img" src="../images/ap2.png">
+                <figcaption>fig.2 Cable routing</figcaption>
+              </figure>
+              <p>before assembly the unit was sanded and stained, then the
+                corners were futher darkened. After drying, satin polyurathane was applied.
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 1 - Column 2 -->
+
+          <div class="text-outer">
+            <div class="text-inner">
+              <figure class="left">
+                <img alt=" small oak pedalboard" class="lg-img" src="../images/ap3-2.png"></img>
+                <figcaption class="fig-overlay">Fig.3 Small oak pedalboard for acoustic guitar</figcaption>
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+
+      <div class="bk-wide-row clearfix">
+        <div class="bk-wide-column">
+
+          <!-- Row 2 Column 1 -->
+
+          <div class="text-outer">
+            <figure class="right">
+              <img alt="pedalboard frontview" class="lg-img" src="../images/ep7.png"></img>
+              <figcaption class="fig-overlay">Fig.4 Large pedalboard for electric guitar</figcaption>
+            </figure>
+            <figure class="right">
+              <img alt="pedalboard sideview" class="lg-img" src="../images/ep6.png"></img>
+              <figcaption class="fig-overlay">Fig.5 Large pedalboard for electric guitar</figcaption>
+            </figure>
+          </div>
+
+          <!-- Row 2 - Column 2 -->
+
+          <div class="text-outer">
+            <div class="text-inner">
+              <h4 class="description">Large Pedal Board</h4>
+              <i>for electric guitar</i>
+              <p>This board was built to provide plenty of space for pedals, while hiding cables
+                and power supplies.
+              </p>
+              <figure class="left">
+                <img alt="planning the layout of the pedals" class="small-img left" src="../images/ep1.png">
+                <figcaption>Fig.6 Planning the layout</figcaption>
+              </figure>
+              <p>It was designed for setting out in the living room, without being an eyesore. Rubber feet
+                were added to the bottom for sure footing.
+              </p>
+              <figure class="right">
+                <img alt="cable routing under the pedalboard" class="small-img right" src="../images/ep2.png">
+                <figcaption>Fig.7 Power and cable routing</figcaption>
+              </figure>
+              <p>Before the holes were drilled to route the cables, the possible configurations were tested
+                with templates. The final hole locations allow for two spacious rows, or three if some
+                pedals are turned 90 degrees. As you can see there is plenty of space to be creative in
+                to reach all the foot-switches.
+              </p>
+              <figure class="left">
+                <img alt="closeup showing the translucent finish of the pedalboard" class="small-img left" src="../images/ep4.png">
+                <figcaption>Fig.8 Translucent finish</figcaption>
+              </figure>
+              <p>The power transoformer is located under board. The finish is a custom layering of black stain
+                milk paint and three layers of satin polyurethane. Input and output holes on the side were
+                counter sunk, for a flush installation of nickle plated jacks.
+                The connecting jacks are custom cut lengths, soldered with silver for excellent signal quality.
+              </p>
+              <figure class="right">
+                <img alt="closeup of countersunk jacks" class="small-img right" src="../images/ep5.png">
+                <figcaption>Fig.9 Counter sinking the jacks</figcaption>
+              </figure>
+              <p>The last image shows a close up of the nickle plated jacks, as well as the master power switch
+                and an EIC outlet.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="bk-wide-row">
+          <div class="bk-wide-column">
+            <figure>
+              <img alt="detail of countersunk jacks" class="center" src="../images/woodworking900.png">
+              <figcaption class="fig-overlay">Fig.10 Detail of completed pedalboard</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
     </main>
+
   </body>
 </html>
