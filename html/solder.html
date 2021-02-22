@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Added preconnect per fonts.google.com instructions -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- loads Open Sans font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap">
+    <!-- Loads my css file -->
     <link rel="stylesheet" type="text/css" href="../css/bk_style.css">
-    <title>BK Week-3 Solder</title>
+    <title> BK Week-3 Solder </title>
   </head>
+
   <body>
+
+
+    <!-- Navigation Banner -->
+
     <div class="bk-banner-container">
       <div class="bk-banner-top">
         <h6>Hire the<span id="shady"> worlds shadiest </span>project developer</h6>
       </div>
+    </div>
+
+    <!-- Verticle nav menu on left side -->
+
+    <nav class="sticky-nav">
       <ul class="bk-menu">
         <li class="bk-list">
           <a href="./index.html"><b> Home </b></a>
@@ -17,7 +32,7 @@
           <button class="dropbtn"><b> Projects > </b></button>
           <li class="dropdown-content">
             <a href="./solder.html"> Soldering </a>
-            <a href="./python.html"> Pythons </a>
+            <a href="./python.html"> Python </a>
             <a href="./woodworking.html"> Woodworking </a>
           </li>
         </div>
@@ -25,9 +40,155 @@
           <a href="./contact.html"><b> Contact </b></a>
         </li>
       </ul>
-    </div>
-    <main>
-      <p> Solder Projects Page </p>
+    </nav>
+
+<!-- Main area headlines -->
+
+    <main class="bk-main">
+      <div class="bk-headline">
+        <h1> Soldering Projects </h1>
+        <div>
+          <p class="bk-subtitle">
+            <b> We're all up to something
+              <u> relative </u>
+            . . . Now more than ever.
+            </b>
+          </p>
+        </div>
+      </div>
+
+      <!-- row of previews with picture links -->
+
+      <div class="bk-row">
+
+        <!-- Column 1 -->
+
+        <div class="bk-column">
+
+          <!-- Aeon Refractor Case -->
+
+          <div class="preview">
+            <h1> Aeon Refractor Case - </h1>
+            <img class="preview-img" src="../images/rf1.png"></img>
+            <p><b> Refractor - </b>
+                  This is a Klon Centaur clone.
+                  I started with laying out the hole spacing.
+            </p>
+            <img class="preview-img" src="../images/rf2.png"></img>
+            <p><b> Enlarge the holes - </b>
+                  After the knob layout was set,
+                  the holes get the final drill size.
+            </p>
+            <img class="preview-img" src="../images/rf3.png"></img>
+            <p><b> Etching - </b>
+                  I painted the surface with clear nail polish,
+                  then scratched the knob labels and artwork with a stick.
+                  Then used a 6amp DC battery charger, vinegar and a Q-tip
+                  to remove material from the non-painted areas.
+            </p>
+            <img class="preview-img" src="../images/rf4.png"></img>
+            <p><b> Polish - </b>
+                  Smooth out the surface and the artwork begins to show up.
+                  The areas inside the letters G and O are a little to
+                  agressively etched, but it's unique.
+                  It can be left like this, but this one is
+                  ready to receive paint.
+            </p>
+            <img class="preview-img" src="../images/rf5.png"></img>
+            <p><b> Painting - </b>
+                  The paint is applied to fill the etching.
+                  Then it will be polished smooth again
+                  to produce a flush colored effect.
+            </p>
+            <img class="preview-img" src="../images/rf6.png"></img>
+            <p><b> Final Polish - </b>
+                  This is the last time it gets polished, then assembled.
+                  It could be clear coated for a more refined look,
+                  but I like this one just like it is.
+                  This one gets some miniature Davies knobs to emulate it's namesake.
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+
+        <div class="bk-column">
+
+          <!-- Aeon Refractor Circuit Board -->
+
+          <div class="preview">
+            <h1> Refractor Board </h1>
+            <img class="preview-img" src="../images/rf9.png"></img>
+            <p><b> Work Space - </b>
+                  List of materials, parts, solder and coffee.
+                  Each part gets found and checked with a multimeter
+                  before getting pushed through the board
+                  and checked off the list.
+            </p>
+            <img class="preview-img" src="../images/rf8.png"></img>
+            <p><b> Time to Solder - </b>
+                  Typically parts are soldered from shortest
+                  to tallest. The resisters are usually first,
+                  and the electrolytic capcitors are usually last.
+            </p>
+            <img class="preview-img" src="../images/rf7.png"></img>
+            <p><b> Top View - </b>
+                  This has most of the parts applied accept the sockets
+                  for the IC's and a few odd sized parts.
+            </p>
+            <img class="preview-img" src="../images/rf10.png"></img>
+            <p><b> Assembly Complete - </b>
+                  Everything fits snug with plenty of room. You can see the
+                  daughter board on the switch and the covered jacks on
+                  this one. Box capacitors were used to keep a cleaner look.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Column 3 -->
+
+        <div class="bk-column">
+
+          <!-- Aeon Blues Breaker -->
+
+          <div class="preview">
+            <h1> Aeon Blues Breaker </h1>
+            <img class="preview-img" src="../images/bb1.png"></img>
+            <p><b> Blues Breaker - </b>
+                  This is a Blues Breaker clone. You can see the paint process
+                  is identical to the Refractor. From this angle you can see the
+                  socketed clipping stages to make adjustments. So far no changes are needed.
+            </p>
+            <img class="preview-img" src="../images/bb2.png"></img>
+            <p><b> Assembly Complete - </b>
+                  Straight forward as you can see. I direct wired the switch on this one,
+                  but used a daughter board on the next project. I didn't have a preference
+                  They both worked fine.
+            </p>
+            <img class="preview-img" src="../images/bb3.png"></img>
+            <p><b> Top View </b>
+                  The fine lettering was a little more fiddly than I hoped.
+                  It's readable, but I needed to etch the line a little deeper
+                  to hold more paint.
+            </p>
+          </div>
+
+          <!-- SHO  -->
+
+          <div class="preview">
+            <h1> SHO </h1>
+            <img class="preview-img" src="../images/sho.png"></img>
+            <p><b> SHO - </b>
+                  The SHO is a boost circuit that offers unity gain
+                  to 60X, while adding high-end clarity
+                  by utilizing a 5 million ohm input impedance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     </main>
   </body>
 </html>

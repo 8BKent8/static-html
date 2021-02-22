@@ -1,6 +1,14 @@
-/*html tag attributes*/
+/*--------------------*\
+ #HTML elements
+\*--------------------*/
+
+/* box sizing includes border to allow correct automatic spacing */
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', Verdana, sans-serif;
 }
 
 body {
@@ -11,6 +19,7 @@ body {
 nav {
   margin: 0;
   background-color: black;
+  opacity: 85%;
   color: #aaa;
 }
 
@@ -23,8 +32,14 @@ li {
   list-style-type: none;
 }
 
-/************************************************/
-/* week-3 pseudo-class elements styled here */
+
+
+
+
+
+/*--------------------*\
+ week-3 pseudo-class elements styled here
+\*--------------------*/
 
 a {
   color: red;
@@ -46,12 +61,8 @@ a:hover {
 a:active {
   background-color: #555;
 }
-/*************************************************/
 
-
-b {
-  font-weight: 700;
-}
+/*--------------------*/
 
 h1 {
   font-size: 45px;
@@ -65,41 +76,62 @@ h2 {
   padding: 5px 5px;
 }
 
+h4 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 2px;
+}
+
 h6 {
   margin: 0;
   letter-spacing: 5px
 }
 
 p {
-  text-size: 16px;
+  font-size: 16px;
   text-align: left;
   padding: 10px;
+}
+
+b {
+  font-weight: 800;
 }
 
 footer {
   margin: 0;
 }
 
-/* css for banner and navigation area*/
+
+
+
+
+
+/*--------------------*\
+  banner and navigation
+\*--------------------*/
 
 /*bk container for all elements in banner*/
 .bk-banner-container{
   display: table;
-  /* background image sits behind all
-  other visible elements in banner*/
+  position: absolute;
   background-image: url("../images/heroimg.png");
   background-position: center;
   color: #aaa;
   font-size: 22px;
   width: 100%;
+  height: 370px;
+  z-index: -1;
+  top: 0;
 }
 
 /* banner top container */
 .bk-banner-top {
+  position: relative;
   background-color: black;
   opacity: 85%;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  width: 100%;
 }
 
 /* text shadow animation for "shady" id */
@@ -114,22 +146,32 @@ footer {
 /* bk vertical nav menu container */
 .bk-menu {
   float: left;
-  padding: 30px;
+  padding: 30px 30px 30px 30px;
   text-align: left;
-  background: black;
-  opacity: 85%;
-  margin: auto;
+  background: inherit;
+  font-size: 22px;
+  margin: 60px 0 auto;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0px;
+}
+
+/* clears float after nav menu */
+.bk-menu::after {
+  content: "";
+  display: block;
 }
 
 /* space out the menu items */
 .bk-list {
-  padding: 40px 100px;
+  color: #aaa;
+  padding: 20px 20px;
   margin: 10px;
 }
 
-/* Add a gray background
-and orange text color to project>
-submenu links on hover */
+/* Add a gray background to submenu links on hover */
 .dropdown-content a:hover {
   background-color: #333;
 }
@@ -141,11 +183,16 @@ submenu links on hover */
   box-sizing: inherit;
   background-color: inherit;
   font-family: inherit;
+  /*Week 4 requirement - button is relative
+  and dropdown is absolute*/
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.dropbtn:hover {
+/* dims the submenu button on hover
+to direct attention to submenu */
+.dropdown:hover {
   color: #111;
 }
 
@@ -153,13 +200,15 @@ submenu links on hover */
 .dropdown-content {
   display: none;
   font-size: 16px;
+  /* Week 4 requirement = button is absolute position */
   position: absolute;
   background-color: #111;
-  min-width: 140px;
+  min-width: 120px;
   text-decoration: none;
 }
 
 /* Links inside the dropdown */
+/* pseudo classes styled in elements section above */
 .dropdown-content a {
   float: none;
   padding: 12px 16px;
@@ -172,55 +221,314 @@ submenu links on hover */
   display: inline-block;
 }
 
-/* css for main area */
+
+
+
+
+/*--------------------*\
+  main area
+\*--------------------*/
+
 .bk-main {
   clear: both;
   margin: 0;
-  padding: 100px 40px;
+  padding: 30px 20px 100px 20px;
+
 }
 
+/* main title gets orange boarder*/
 .bk-headline {
-  text-align: left;
-  margin: 0 20%;
-  padding; 20px;
-}
-
-.table1 {
-  border: none;
-  position: auto;
-}
-
-.table-spacing1 {
+  text-align: center;
   margin: auto;
-  width: 50%;
-  padding: 30px 30px;
+  padding: 20px;
+  max-width: 700px;
+  min-width: 325px;  /* keeps the title inside the border */
+  border: 2px solid #ff3300;
+  border-radius: 25px;
 }
 
-.img-spacing1 td {
-  margin: auto;
-  width: 50%;
-  padding: 20px 10px;
+/* subtitle gets blurred orange shadow*/
+.bk-subtitle {
+  /*Week 4 requirement = relative, this makes the subtitle
+  sit inside the headline area and also visible
+  as it scrolls up the page*/
+  position: relative;
+  text-shadow: 2px 2px 5px #ff3300;
+  text-align: center;
+}
+
+
+/* css written for solder.html feel free to reuse for a three column layout */
+/* all elements of preview and table gets 5px border radius */
+.bk-row, .preview, .preview-img {
+  border: 2px solid #FF3300;
+  border-radius: 5px;
+}
+
+.bk-row {
+  width: 80%;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+/* clear float after columns */
+.bk-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* three columns equal size */
+
+/*Week 4 requirement = using float and %
+  to create columns and spacing*/
+.bk-column {
+  content: "";
+  float: left;
+  width: 33.3333%;
+  padding: 10px;
+}
+
+.preview {
+  padding: 20px;
+  min-height: 525px;
 }
 
 .preview-img {
-  height: 250px;
-  width: auto;
+  width: 100%;
   box-shadow: 2px 2px 5px grey;
-  border: 2px solid #333;
+  }
+
+/* Week 4 bonus = use media query to readjust column size
+if screen is smaller than 875px
+display vertically by making each colum 100% width*/
+@media screen and (max-width: 875px) {
+  .bk-row {
+    width: 100%;
+  }
+  .bk-column {
+    width: 100%;
+  }
 }
 
-.table2 {
-  border: 2px solid #333;
-  width: 60%;
-  align: center;
-  vertical-align: middle;
+/* Week 6 adds break point at 1042
+to change width of row from 80% to 100%*/
+@media screen and (max-width: 1060px) {
+  .bk-row {
+    width: 100%;
+  }
 }
 
-.table2-spacing {
+
+
+
+/*------------------------------*\
+  Week 5 development
+\*------------------------------*/
+/* css written for woodworking.html to produce 60/40 sections */
+
+.bk-main-woodworking {
+  background-color: #F30D;
+}
+
+
+.bk-wide-row {
   margin: auto;
-  height: 20%;
-  padding: 30px 30px;
+  padding: 0;
+  max-width: 1130px;
+  background-color: #fff6;
 }
+
+.bk-wide-column {
+  content: "";
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.text-outer {
+  padding: 0;
+  min-height: 505px;
+  float: left;
+  width: 50%;
+}
+
+.text-inner {
+  margin:  0;
+  padding: 0;
+
+}
+
+.text-center {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.text-inner p {
+  margin:  0;
+  padding: 0 20px;
+}
+
+.wide-row-text {
+  margin:  0;
+  padding: 0;
+}
+
+.description {
+  display: inline;
+}
+
+figure {
+  display: inline;
+  margin:  0px;
+  padding: 0px;
+}
+
+
+figcaption {
+  margin:  0;
+  padding: 0;
+  font-style: italic;
+  font-size: 11px;
+  color: #900;
+  text-align: center;
+}
+
+.fig-overlay {
+  margin: -22px 0 0 65px;
+  padding: 3px;
+}
+
+.small-img {
+  margin:  0;
+  padding: 0px;
+  width: 180px;
+  height: auto;
+}
+
+.left {
+  float: left;
+  padding-right: 3px;
+}
+
+.right {
+  float: right;
+  padding-left: 3px;
+}
+
+.center {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+.lg-img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+}
+
+/* clear floats after each float in text section */
+img.small-img::after,
+img.lg-img::after {
+  clear: both;
+}
+
+/* use to contain floated objects within container */
+.clearfix {
+  overflow: hidden;
+}
+
+/* switches column width to 100% and adjusts padding
+for screens smaller than x-pixles */
+@media screen and (max-width: 790px) {
+  .text-outer {
+    width: 100%;
+  }
+
+  .text-inner {
+    padding: 30px 10px;
+  }
+}
+
+/*------------------------*\
+  End of Week 5 development
+\*-------------------------*/
+
+
+
+
+
+/*------------------------*\
+  Week 6 development
+\*-------------------------*/
+
+/* homepage tabe styles */
+
+table {
+  text-align: left;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.homepage-table {
+  margin: 5rem auto; /*top and bottom set, width centered*/
+  width: 70%;
+  height: 40%;
+}
+
+.homepage-table th {
+  padding: 1.25rem;
+}
+
+tr, td {
+  margin: 0;
+  padding: .5rem;
+}
+
+.table-top {
+  margin: 0;
+  padding: 1.5rem;
+  box-shadow: 1px 2px 5px #003;
+  background-color: #F30;
+  width: 100%;
+  text-align: center;
+}
+
+#top-row {
+  background-color: inherit;
+  border-bottom: 2px solid black;
+  color: #F30;
+}
+
+
+/* Adjust rowspans in html as group items are added */
+
+
+#table-grp-soldering,
+#table-grp-python,
+#table-grp-woodworking {
+  color: #F30;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #0033;
+}
+
+
+
+
+
+/*------------------------*\
+  End of Week 6 development
+\*-------------------------*/
+
+
 
 
 /* css for footer area */
