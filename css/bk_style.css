@@ -67,7 +67,7 @@ a:active {
 h1 {
   font-size: 45px;
   font-weight: 700;
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 h2 {
@@ -80,6 +80,11 @@ h4 {
   font-size: 25px;
   font-weight: 600;
   padding: 2px;
+}
+
+h5 {
+  margin: 0;
+  padding: ;
 }
 
 h6 {
@@ -124,6 +129,10 @@ footer {
   top: 0;
 }
 
+.fullpage {
+  height: 620px;
+}
+
 /* banner top container */
 .bk-banner-top {
   position: relative;
@@ -150,7 +159,7 @@ footer {
   text-align: left;
   background: inherit;
   font-size: 22px;
-  margin: 60px 0 auto;
+  margin: 0 auto;
 }
 
 .sticky-nav {
@@ -233,18 +242,26 @@ to direct attention to submenu */
   clear: both;
   margin: 0;
   padding: 30px 20px 100px 20px;
+}
 
+.homepage {
+  margin: 180px 0;
+  padding: 80px 20px 100px 20px;
 }
 
 /* main title gets orange boarder*/
 .bk-headline {
+  background-image: linear-gradient(#5550, #5555);
   text-align: center;
-  margin: auto;
+  position: relative;
+  top: 30px;
+  margin: 60px auto;
   padding: 20px;
-  max-width: 700px;
+  max-width: 500px;
   min-width: 325px;  /* keeps the title inside the border */
   border: 2px solid #ff3300;
   border-radius: 25px;
+  z-index: -1;
 }
 
 /* subtitle gets blurred orange shadow*/
@@ -254,7 +271,6 @@ to direct attention to submenu */
   as it scrolls up the page*/
   position: relative;
   text-shadow: 2px 2px 5px #ff3300;
-  text-align: center;
 }
 
 
@@ -283,7 +299,6 @@ to direct attention to submenu */
 /*Week 4 requirement = using float and %
   to create columns and spacing*/
 .bk-column {
-  content: "";
   float: left;
   width: 33.3333%;
   padding: 10px;
@@ -531,6 +546,201 @@ tr:nth-child(odd) {
 
 
 
+
+/*------------------------*\
+  Week 7 development
+\*-------------------------*/
+
+.hero {
+  text-shadow: 2px 2px 5px #fff7;
+}
+
+form {
+  width: 65%;
+  min-width: 410px;
+  height: 480px;
+  margin: auto;
+  border: 2px solid #223f;
+  }
+
+label {
+  font-size: 12px;
+  color: #000;
+}
+
+input, select {
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+}
+
+.contact-form {
+  background-image: url("../images/heroimg.png");
+  border-radius: 25px;
+  background-position: center;
+  margin: 1.5rem auto;
+}
+
+  .contact-form p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+.overlay {
+  position: relative;
+  background-color: #2235;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+#form-olay {
+  /*background-color: #2235;*/
+  background-image: linear-gradient(#f305, #bbca);
+
+  padding: 6px;
+}
+
+/* line-1 Who You Are */
+.area-1 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+    fieldset:after {
+      content: "";
+      clear: both;
+    }
+
+
+    /* first and last name div */
+    .name {
+      float: left;
+      width: 25%;
+      padding: .75rem;
+    }
+
+    input[name=fname], [name=lname] {
+      width: 100%;
+      padding: 6px;
+    }
+
+
+    /* email div */
+    .email {
+      float: left;
+      width: 50%;
+      padding: .75rem;
+    }
+
+    input[id=email] {
+      width: 100%;
+      padding: 6px;
+    }
+
+
+/* line-2 Where You Are */
+.area-2 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+    /* street address */
+    .street {
+      float: left;
+      width: 100%;
+      padding: .75rem;
+    }
+
+
+        input[id=saddress] {
+          width: 100%;
+          padding: 6px;
+        }
+
+
+    /* city */
+    .city {
+      float: left;
+      width: 50%;
+      padding: .75rem;
+    }
+
+        input[id=city] {
+          width: 100%;
+          padding: 6px;
+        }
+
+
+    /* state selection */
+    .state {
+      float: left;
+      width: 25%;
+      padding: .75rem;
+    }
+
+        select[id=state] {
+          padding: 6px;
+        }
+
+
+    /* zip code entry */
+    .zip {
+      float: left;
+      width: 25%;
+      padding: .75rem;
+    }
+
+        input[id=zipcode] {
+          width: 4rem;
+          padding: 6px;
+        }
+
+
+/* area-3 */
+.area-3 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+    .message {
+      float: left;
+      width: 100%;
+      padding: .75rem;
+    }
+
+        textarea[id=message] {
+          width: 100%;
+          resize: none;
+          border-radius: 25px;
+        }
+
+    .questions {
+      float: left;
+      width: 50%;
+      padding: .75rem;
+    }
+
+#form-btn {
+  height: 80px;
+}
+
+#goback {
+  text-align: right;
+  padding: 2px;
+  color: #f30;
+}
+
+
+
 /* css for footer area */
 .bk-foot {
   background-color: black;
@@ -538,25 +748,42 @@ tr:nth-child(odd) {
 }
 
 .btn {
-  border: 2px solid #ff3300;
-  padding: 20px 30px;
-  background-color: black;
-  font-family: inherit;
-  margin: 0;
+  display: inline-block;
+  border: 2px solid #f30;
+  padding: 26px 42px;
+  background-color: #2235;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin: auto;
+  width: 100%;
   text-decoration: none;
-  border-radius: 80px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition-duration: 0.4s;
 }
+
 
 .btn a h2 {
   color: #fff;
 }
 
 .btn:hover {
-  background-color: #ff0000
+  background-color: #ff0000;
+  color: black;
 }
 
 .btn-spacing {
   margin: auto;
-  width: 50%;
-  padding: 50px;
+  width: 60%;
+  height: 80px;
+  padding: 5px;
 }
+
+
+
+
+
+/*------------------------*\
+  End of Week 7 development
+\*-------------------------*/

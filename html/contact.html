@@ -12,12 +12,11 @@
 
   <body>
 
-
     <!-- Navigation Banner -->
 
     <div class="bk-banner-container">
       <div class="bk-banner-top">
-        <h6>Hire the<span id="shady"> worlds shadiest </span>project developer</h6>
+        <h6>Hire the<span id="shady"> world's shadiest </span>project developer</h6>
       </div>
     </div>
 
@@ -42,20 +41,103 @@
       </ul>
     </nav>
 
-    <!-- Main area headlines -->
+    <!-- banner headlines -->
+    <div class="bk-headline overlay">
+      <div>
+        <h5 class="bk-subtitle">
+          <b > . . . What are you ciphering.
+          </b>
+        </h5>
+        <h1 class="hero"> Contact Me </h1>
+      </div>
+    </div>
+
+
+    <!-- Main area -->
 
     <main class="bk-main">
-      <div class="bk-headline">
-        <h1>Contact</h1>
-        <div>
-          <p class="bk-subtitle">
-            <b>We're all up to something
-              <u> relative </u>
-            . . . Now more than ever.
-            </b>
-          </p>
+
+      <!-- week-7 contact form -->
+
+      <form class="contact-form" action="./contact2.html">
+        <div id="form-olay" class="overlay">
+
+          <!-- area-1  Who You Are -->
+
+          <fieldset class="area-1">
+            <legend> Who You Are: </legend>
+
+            <!-- first name type=text -->
+            <div class="name">
+              <label for="fname"> First: </label><br>
+              <input type="text" name="fname">
+            </div>
+
+            <!-- last name -->
+            <div class="name">
+              <label for="lname"> Last: </label><br>
+              <input type="text" name="lname">
+            </div>
+
+            <!-- email type=email -->
+            <div class="email">
+              <label for="email"> Email: </label><br>
+              <input type="email" id="email" name="email">
+            </div>
+
+          </fieldset>
+
+
+          <!-- area-2 Where You Are -->
+
+          <fieldset class="area-2">
+            <legend> Where You Are: </legend>
+
+            <!-- street address -->
+            <div class="street">
+              <label for="saddress"> Street Address: </label><br>
+              <input type="text" id="saddress" name="saddress">
+            </div>
+
+            <!-- city -->
+            <div class="city">
+              <label for="city"> City: </label><br>
+              <input type="text" id="city" name="city">
+            </div>
+
+            <!-- state type=select -->
+            <div class="state">
+              <label for="state"> State: </label><br>
+              <select id="state" name="state" value="VT">
+                <option value="AL"> AL </option><option value="AK"> AK </option><option value="AZ"> AZ </option><option value="AR"> AR </option><option value="CA"> CA </option>
+                <option value="CO"> CO </option><option value="CT"> CT </option><option value="DE"> DE </option><option value="FL"> FL </option><option value="GA"> GA </option>
+                <option value="HI"> HI </option><option value="ID"> ID </option><option value="IL"> IL </option><option value="IN"> IN </option><option value="IA"> IA </option>
+                <option value="KS"> KS </option><option value="KY"> KY </option><option value="LA"> LA </option><option value="ME"> ME </option><option value="MD"> MD </option>
+                <option value="MA"> MA </option><option value="MI"> MI </option><option value="MN"> MN </option><option value="MS"> MS </option><option value="MO"> MO </option>
+                <option value="MT"> MT </option><option value="NE"> NE </option><option value="NV"> NV </option><option value="NH"> NH </option><option value="NJ"> NJ </option>
+                <option value="NM"> NM </option><option value="NY"> NY </option><option value="NC"> NC </option><option value="ND"> ND </option><option value="OH"> OH </option>
+                <option value="OK"> OK </option><option value="OR"> OR </option><option value="PA"> PA </option><option value="RI"> RI </option><option value="SC"> SC </option>
+                <option value="SD"> SD </option><option value="TN"> TN </option><option value="TX"> TX </option><option value="UT"> UT </option><option value="VT"> VT </option>
+                <option value="VA"> VA </option><option value="WA"> WA </option><option value="WV"> WV </option><option value="WI"> WI </option><option value="WY"> WY </option>
+              </select>
+            </div>
+
+            <!-- zipcode -->
+            <div class="zip">
+              <label for="zipcode"> Zipcode </label><br>
+              <input type="text" id="zipcode" name="zipcode" maxlength="5">
+            </div>
+
+          </fieldset>
+
+          <!-- submit button with value "next"
+                    points to contact2.html page set in form action -->
+          <div class="btn-spacing">
+            <input type="submit" value="Next" class="btn" id="form-btn">
+          </div>
+
         </div>
-      </div>
+      </form>
 
     </main>
 

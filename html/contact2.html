@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Added preconnect per fonts.google.com instructions -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- loads Open Sans font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap">
+    <!-- Loads my css file -->
+    <link rel="stylesheet" type="text/css" href="../css/bk_style.css">
+    <title> BK - Contact </title>
+  </head>
+
+  <body>
+
+
+    <!-- Navigation Banner -->
+
+    <div class="bk-banner-container">
+      <div class="bk-banner-top">
+        <h6>Hire the<span id="shady"> world's shadiest </span>project developer</h6>
+      </div>
+    </div>
+
+    <!-- Verticle nav menu on left side -->
+
+    <nav class="sticky-nav">
+      <ul class="bk-menu">
+        <li class="bk-list">
+          <a href="./index.html"><b> Home </b></a>
+        </li>
+        <div class="bk-list dropdown">
+          <button class="dropbtn"><b> Projects > </b></button>
+          <li class="dropdown-content">
+            <a href="./solder.html"> Soldering </a>
+            <a href="./python.html"> Python </a>
+            <a href="./woodworking.html"> Woodworking </a>
+          </li>
+        </div>
+        <li class="bk-list">
+          <a href="./contact.html"><b> Contact </b></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="bk-headline overlay">
+      <div>
+        <h5 class="bk-subtitle">
+          <b > . . . What are you ciphering.
+          </b>
+        </h5>
+        <h1 class="hero"> Contact Me </h1>
+      </div>
+    </div>
+
+
+    <!-- Main area headlines -->
+
+    <main class="bk-main">
+
+      <!-- week-7 contact form -->
+
+      <form class="contact-form" action="./index.html">
+        <div id="form-olay" class="overlay">
+
+
+          <!-- area-3 What you want -->
+
+          <fieldset class="area-3">
+            <legend> What You Want: </legend>
+
+            <!-- Main contact message type=textarea -->
+            <div class="message">
+              <label for="message"> What are you interested in? </label><br>
+              <textarea id="message" name="message" rows="4" cols="50" maxlength="400">
+              </textarea>
+            </div class= interests>
+
+            <!-- questions type=radio -->
+            <div class="questions">
+              <p> Would you like to subscribe to my newsletter? </p>
+              <input type="radio" id="yes" name="subscribe" checked>
+              <label for=subscribe> Yes </label>
+              <input type="radio" id="no" name="subscribe">
+              <label for="subscribe"> No </label>
+            </div>
+            <div class="questions">
+              <label for=interest> Check the box if submitting a project idea? </label><br>
+              <input type="checkbox" id="interest" name="interest">
+            </div>
+
+          </fieldset>
+
+          <!-- submit button with value "next"
+                    points to index.html page set in form action in lue of .php page -->
+          <div class="btn-spacing">
+            <input type="submit" value="submit" class="btn" id="form-btn">
+              <a id="goback" href="./contact.html">
+                <h5>Start over</h5>
+              </a>
+          </div>
+
+        </div>
+      </form>
+
+    </main>
+
+  </body>
+</html>
