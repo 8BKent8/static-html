@@ -287,6 +287,15 @@ to direct attention to submenu */
   margin: 30px auto;
 }
 
+#single-row {
+  width: 60%;
+  background-color: ;
+}
+
+#single-col {
+  width: 100%;
+}
+
 /* clear float after columns */
 .bk-row:after {
   content: "";
@@ -309,10 +318,26 @@ to direct attention to submenu */
   min-height: 525px;
 }
 
+.py-title {
+  display: inline;
+}
+
+.py-subtitle {
+  font-size: small;
+  font-style: italic;
+}
+
 .preview-img {
   width: 100%;
   box-shadow: 2px 2px 5px grey;
   }
+
+.img-limit {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+
+}
 
 /* Week 4 bonus = use media query to readjust column size
 if screen is smaller than 875px
@@ -322,6 +347,9 @@ display vertically by making each colum 100% width*/
     width: 100%;
   }
   .bk-column {
+    width: 100%;
+  }
+  #single-row {
     width: 100%;
   }
 }
@@ -474,6 +502,19 @@ for screens smaller than x-pixles */
   End of Week 5 development
 \*-------------------------*/
 
+.python-bg-1 {
+  background-color: #000a;
+  color: #fffc;
+}
+
+#python-bg-lt {
+  background-image: radial-gradient(#3343, #2234, #1129);
+}
+
+.center-img {
+  margin: auto;
+  width: 40%;
+}
 
 
 
